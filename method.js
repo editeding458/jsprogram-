@@ -114,3 +114,26 @@ let nestedArray = [1,2,[3,4],[5,6]];
 console.log("default nested array:",nestedArray);
 let flatArr = nestedArray.flat();
 console.log("flat array:",flatArr);
+
+// array destructuring
+
+/*let array=[1,2,3]
+const [first,second,thind]= array
+console.log(first)
+console.log(second)
+console.log(thind)*/
+
+// skipping values
+
+// let array1=[1,2,3,4]
+// const [first,,thind]= array1
+// console.log(first)
+// console.log(thind)
+
+//nest operator // spread
+
+const num1=[1,2,3,4,5]
+const [fir,,second,...nest]= num1
+console.log(fir)
+console.log(second)
+console.log(nest)
