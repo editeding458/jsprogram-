@@ -1,129 +1,116 @@
-/*string methods()
-length()
-trim()
-toUpperCase()
-tolowercase()
-include()
-indexeof()
-Slice()
-substring()
-replece()
-concat()
-spilet()*/
+// string methods
+// length()
+// trim ()
+// Ltrim()left side space remove in text 
+// Rtrim() right side space remove in text
+// toUpperCase()
+// toLowerCase()
+// includes()
+// indexOf()
+// slice()
+// substring()
+// replace()
+// concat
+// split()
 
+//let str = "Hello javascript word";
+// console.log(str);
 
-/*let str="Hello"
-console.log (str)
-console.log (str.length)
+//console.log("length():", str.length);
 
-let trimText =str.trim();
-console.log("trim():",trimText)
+//let trimText = str.trim();
+// console.log("trim():", trimText);
+// console.log("toUpperCase():", str.toUpperCase());
+// console.log("toLowerCase():", str.toLowerCase());
+// console.log("includes():", str.includes("javascript"));
+// console.log("indexOf():", str.indexOf("javascript"));
+// console.log("slice():", str.slice(1, 32));
+// console.log("substring():", str.substring(0, 12));
 
-console.log("toUpperCase():",str.toUpperCase())
-console.log("toLowerCase():",str.toLowerCase())
+// let rep= str.replace("Hello","hyyy");
+// console.log("replace():",rep);
 
-console.log("includes():",str.includes("javascript"))
+// let rep1= "hello react";
+// console.log("concat():", str.concat(rep1));
 
-console.log("includes():",str.includes("abc"))
+// console.log("split():", str.split(" "));
 
-console.log("indexof():",str.indexOf("javascript"))
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// array methods
 
-console.log("Slice():",str.slice(2,-7))
+// length()
+// push()
+// pop()
+// pop()
+// unshift()
+// shift()
+// concat()
+// includes()
+// indexOf()
+// splice()
+// slice()
+// join()
+// delete()
+// map()
+// filter()
+// find ()
+// foreach()
+// sort()
+// reverse() 
+// flat ()
 
-console.log("substring():",str.substring(2,5))
+// let arr = ['one','two','three',1,{name:'name'}]
+// console.log("default array:",arr);
 
-console.log("replece():",str.replace("Hello","hey"))
+// console.log("length():",arr.length);
 
-console.log("spilt():",str.split(""))
+// //console.log("push()",
+// arr.push("add new");
+// console.log("array after push",arr)
 
-let extraRect=" -HELLO 25";
-console.log("concat():",str.concat("extraRect"))
-/* array method
-length()
-array
-pop()
-push()
-unshift()
-shift()
-concat()
-includes()
-indexOf()
-splice()
-slice()
-join()
-delete()
-map()
-filter()
-find()
-forEach()
-sort()
-reverse()
-flat()
+// arr.pop();
+// console.log("array after pop",arr)
 
+// arr.unshift("first add");
+// console.log("array after unshift",arr)
 
-let arr=['one','two','three',1,{name:'abc'}]
-console.log("default array:",arr)
+// arr.shift()
+// console.log("array after shift",arr)
 
+// let newArr=["str 1","str 2"];
+// let mixedArr = arr.concat(newArr);
+// console.log("default array after concat:",arr);
+// console.log("array after concat",mixedArr);
 
-console.log("leneth():",arr.length);
+// console.log("includes():",arr.includes("three"));
 
-//console.log("push()",arr.push("new adde element"))
-arr.push("new adde element")
-console.log("array after push:",arr)
+// console.log("indexOf():",arr.indexOf("two"));
 
-console.log("push()",arr.push("new adde element"))
+// console.log("slice():",arr.slice(1,3));
+// console.log("splice():",arr.splice(1,2));
+// console.log ("old arr",arr);
+// console.log("join():",arr.join(", "));
+// delete arr[1];
+// console.log(arr);
 
-arr.pop();
-console.log("array after pop:",arr)
+console.log("array iteration method :")
+let numbers = [1,2,3,4,5,];
 
-arr.unshift("firest elemet")
-console.log("array after unshift:",arr)
+console.log("map:",numbers.map(num => num * 2));
+console.log("after map old array:",numbers);
 
-arr.shift()
-console.log("array after shift:",arr)
-
-let newArr =['str 1' , 'str 2'];
-let mixedArr = arr.concat(newArr)
-console.log("defult:",newArr)
-console.log("array after concat:",mixedArr)
-
-console.log("include():",arr.includes('one'))
-console.log("include():",arr.includes('two'))
-console.log("include():",arr.includes('three'))
-
-
-
-console.log("indexOf:",arr.indexOf('three'))
-
-console.log("slice:",arr.slice(2,4))
-console.log("splice:",arr.splice(2,4))
-console.log("old array:",arr)
-
-console.log("join:",arr.join(", "))
-
-delete arr[4]
-console.log(arr)*/
-
-console.log("Array iteration method:")
-let numbers=[1,2,3,4,5,6];
-
-console.log("map:",numbers.map(num => num*2))
-console.log("Array map old array :",numbers)
-
-console.log("filter:",numbers.filter(num => num*2))
-console.log("Array filter old array :",numbers)
+console.log("filter:",numbers.filter(num =>num >  2));
+console.log("after filters old array:",numbers);
 
 console.log("forEach:")
-numbers.forEach(num=>console.log(num))
+numbers.forEach(num =>console.log(num));
 
-let num=[3,6,5,2,4,1]
-console.log("sort",num.sort())
+let num = [3,5,2,4,1]
+console.log("sort():",num.sort());
 
-console.log("reverse()",num.reverse())
+console.log("reverse():",num.reverse());
 
-let nestedarray =[1,2,[3,4],[5,6]]
-console.log("defult nested array:",nestedarray)
-
-let flatArray=nestedarray.flat()
-console.log("flatarray",flatArray)
-
+let nestedArray = [1,2,[3,4],[5,6]];
+console.log("default nested array:",nestedArray);
+let flatArr = nestedArray.flat();
+console.log("flat array:",flatArr);
